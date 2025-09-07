@@ -28,8 +28,11 @@ public class UserController {
         return service.addUser(user);
     }
 
-    @PutMapping("/users")
-    public User updateUser(User user){
+
+    @PutMapping("/api/users")
+    public User updateUser(@RequestBody User user){
+
+    
         return service.updateUser(user);
     }
 

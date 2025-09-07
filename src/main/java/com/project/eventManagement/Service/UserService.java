@@ -23,7 +23,7 @@ public class UserService {
         return repo.save(user);
     }
 
-    public User updateUser(User user) {
+    public User updateUser ( User user) {
         return repo.save(user);
     }
 

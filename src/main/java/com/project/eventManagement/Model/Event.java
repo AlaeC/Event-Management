@@ -29,10 +29,10 @@ public class Event {
     private Double latitude;
     private Double longitude;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private LocalDateTime startDate;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private LocalDateTime endDate;
 
     private LocalDateTime createdAt = LocalDateTime.now();

@@ -11,28 +11,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class UserController {
 
     @Autowired
     private UserService service;
 
 
-    @GetMapping("/api/users")
+    @GetMapping("/users")
     public List<User> getAllUsers() {
         return service.getAllUsers();
     }
 
-    @PostMapping("/api/users")
+    @PostMapping("/users")
     public User addUser(@RequestBody User user) {
         return service.addUser(user);
     }
 
-    @PutMapping("/api/users")
+    @PutMapping("/users")
     public User updateUser(User user){
         return service.updateUser(user);
     }
 
-    @DeleteMapping("/api/users/{id}")
+    @DeleteMapping("/users/{id}")
     public void deleteUser(@PathVariable Long id) {
         service.deleteUser(id);
     }

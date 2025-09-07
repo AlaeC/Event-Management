@@ -5,6 +5,7 @@ import com.project.eventManagement.Model.User;
 import com.project.eventManagement.Repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -18,11 +19,11 @@ public class UserService {
         return repo.findAll();
     }
 
-    public User addUser(User user) {
+    public User addUser(@RequestBody User user) {
         return repo.save(user);
     }
 
-    public User updateUser(User user) {
+    public User updateUser ( User user) {
         return repo.save(user);
     }
 

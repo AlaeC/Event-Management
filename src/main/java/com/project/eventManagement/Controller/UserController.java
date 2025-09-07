@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @PutMapping("/api/users")
-    public User updateUser(User user){
+    public User updateUser(@RequestBody User user){
         return service.updateUser(user);
     }
 

@@ -1,6 +1,6 @@
-package com.project.Util.Repo;
+package com.project.eventManagement.Util.Repo;
 
-import com.project.Util.Model.FileData;
+import com.project.eventManagement.Util.Model.FileData;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -1,10 +1,8 @@
-package com.project.Util.Controller;
+package com.project.eventManagement.Util.Controller;
 
-import com.project.Util.Model.FileData;
-import com.project.Util.Service.FileService;
+import com.project.eventManagement.Util.Model.FileData;
+import com.project.eventManagement.Util.Service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

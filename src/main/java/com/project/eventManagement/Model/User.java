@@ -1,13 +1,14 @@
 package com.project.eventManagement.Model;
 
 import com.project.eventManagement.Enum.Role;
+import com.project.eventManagement.Util.Model.FileData;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 import java.util.List;
 
 @Entity
@@ -45,6 +46,18 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<Favorite> favorites;
+
+    @OneToOne
+    @JoinColumn
+    private FileData profileImage;
+
+    public FileData getProfileImage() {
+        return profileImage;
+    }
+
+    public void setProfileImage(FileData profileImage) {
+        this.profileImage = profileImage;
+    }
 
     public List<Favorite> getFavorites() {
         return favorites;

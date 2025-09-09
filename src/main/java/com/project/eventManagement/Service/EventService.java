@@ -2,6 +2,7 @@ package com.project.eventManagement.Service;
 
 
 import com.project.eventManagement.Model.Event;
+import com.project.eventManagement.Model.EventRegistration;
 import com.project.eventManagement.Repo.EventRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,4 +34,5 @@ public class EventService {
     public void deleteEvent(Long id) {
         repo.deleteById(id);
     }
+
 }

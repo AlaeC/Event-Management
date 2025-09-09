@@ -1,4 +1,4 @@
-package com.project.Util.Model;
+package com.project.eventManagement.Util.Model;
 
 
 import jakarta.persistence.*;

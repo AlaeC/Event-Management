@@ -1,4 +1,5 @@
 package com.project.eventManagement.Model;
+import com.project.eventManagement.Util.Model.FileData;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -51,6 +52,9 @@ public class Event {
 
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL)
     private List<Favorite> favorites;
+
+    @OneToMany( cascade = CascadeType.ALL)
+    private List<FileData> allPhoto;
 
     // Getters & Setters
     // ...

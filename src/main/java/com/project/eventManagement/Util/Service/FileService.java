@@ -1,7 +1,7 @@
-package com.project.Util.Service;
+package com.project.eventManagement.Util.Service;
 
-import com.project.Util.Model.FileData;
-import com.project.Util.Repo.FileRepository;
+import com.project.eventManagement.Util.Model.FileData;
+import com.project.eventManagement.Util.Repo.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
